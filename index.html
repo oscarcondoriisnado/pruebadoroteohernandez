@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doroteo Hernández | Programador Web</title>
+  <meta name="description" content="Portafolio profesional de Doroteo Hernández, programador web: HTML, CSS, JavaScript, Python y Git. Conoce mis proyectos y contáctame.">
+  <meta name="author" content="Doroteo Hernández">
+  <meta name="theme-color" content="#0a1f44">
+
+  <!-- Open Graph (vista previa al compartir en redes) -->
+  <meta property="og:title" content="Doroteo Hernández | Programador Web">
+  <meta property="og:description" content="Portafolio profesional: proyectos, habilidades y contacto.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagenes/foto-perfil.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header class="header" id="inicio-header">
+    <nav class="nav contenedor" aria-label="Navegación principal">
+      <a href="#inicio" class="logo">&lt;DH<span>/&gt;</span></a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#inicio" class="nav__link activo">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+        <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+        <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <!-- ===== INICIO ===== -->
+    <section class="hero" id="inicio">
+      <div class="contenedor hero__grid">
+        <div class="hero__texto reveal">
+          <p class="hero__saludo">Hola, soy</p>
+          <h1>Doroteo Hernández</h1>
+          <h2 class="hero__rol">Programador <span id="typing" aria-live="polite"></span><span class="cursor">|</span></h2>
+          <p class="hero__desc">Construyo sitios y aplicaciones web rápidas, seguras y responsivas. Me apasiona convertir ideas en soluciones reales con código limpio.</p>
+          <div class="hero__botones">
+            <a href="#proyectos" class="btn btn--primario">Ver proyectos</a>
+            <a href="docs/cv-doroteo-hernandez.pdf" class="btn btn--secundario" download>Descargar CV</a>
+          </div>
+        </div>
+        <div class="hero__imagen reveal">
+          <img src="imagenes/foto-perfil.jpg" alt="Fotografía de perfil de Doroteo Hernández" width="320" height="320">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="seccion" id="sobre-mi">
+      <div class="contenedor">
+        <h2 class="seccion__titulo reveal">Sobre <span>mí</span></h2>
+        <div class="sobre reveal">
+          <p>Soy programador con enfoque en desarrollo web. Disfruto aprender nuevas tecnologías, resolver problemas y crear interfaces claras y accesibles. Trabajo aplicando buenas prácticas: código ordenado, diseño adaptable a cualquier dispositivo y seguridad desde el primer momento.</p>
+          <ul class="sobre__datos">
+            <li><strong>Nombre:</strong> Doroteo Hernández</li>
+            <li><strong>Especialidad:</strong> Desarrollo Web</li>
+            <li><strong>Ubicación:</strong> Bolivia</li>
+            <li><strong>Correo:</strong> <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section class="seccion seccion--alt" id="habilidades">
+      <div class="contenedor">
+        <h2 class="seccion__titulo reveal">Mis <span>habilidades</span></h2>
+        <div class="habilidades">
+          <article class="skill reveal">
+            <img src="imagenes/html5.png" alt="Logo de HTML5" width="64" height="64" loading="lazy">
+            <h3>HTML5</h3>
+            <div class="barra" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Nivel de HTML5"><span data-nivel="90"></span></div>
+          </article>
+          <article class="skill reveal">
+            <img src="imagenes/css3.png" alt="Logo de CSS3" width="64" height="64" loading="lazy">
+            <h3>CSS3</h3>
+            <div class="barra" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Nivel de CSS3"><span data-nivel="85"></span></div>
+          </article>
+          <article class="skill reveal">
+            <img src="imagenes/js.png" alt="Logo de JavaScript" width="64" height="64" loading="lazy">
+            <h3>JavaScript</h3>
+            <div class="barra" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Nivel de JavaScript"><span data-nivel="75"></span></div>
+          </article>
+          <article class="skill reveal">
+            <img src="imagenes/python.png" alt="Logo de Python" width="64" height="64" loading="lazy">
+            <h3>Python</h3>
+            <div class="barra" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Nivel de Python"><span data-nivel="70"></span></div>
+          </article>
+          <article class="skill reveal">
+            <img src="imagenes/git.png" alt="Logo de Git" width="64" height="64" loading="lazy">
+            <h3>Git</h3>
+            <div class="barra" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Nivel de Git"><span data-nivel="70"></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section class="seccion" id="proyectos">
+      <div class="contenedor">
+        <h2 class="seccion__titulo reveal">Mis <span>proyectos</span></h2>
+        <div class="proyectos">
+          <article class="card reveal">
+            <img src="imagenes/proyecto1.jpg" alt="Captura del Proyecto 1" width="600" height="400" loading="lazy">
+            <div class="card__cuerpo">
+              <h3>Proyecto 1</h3>
+              <p>Descripción breve del proyecto: qué problema resuelve y qué funcionalidades tiene.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="card__links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Código</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="imagenes/proyecto2.jpg" alt="Captura del Proyecto 2" width="600" height="400" loading="lazy">
+            <div class="card__cuerpo">
+              <h3>Proyecto 2</h3>
+              <p>Descripción breve del proyecto: tecnologías usadas y resultado obtenido.</p>
+              <ul class="tags"><li>Python</li><li>Git</li></ul>
+              <div class="card__links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="seccion seccion--alt" id="contacto">
+      <div class="contenedor contenedor--estrecho">
+        <h2 class="seccion__titulo reveal">Ponte en <span>contacto</span></h2>
+        <form class="formulario reveal" id="form-contacto" action="https://formspree.io/f/TU_ID_FORMSPREE" method="POST" novalidate>
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60" autocomplete="name">
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required maxlength="100" autocomplete="email">
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required minlength="10" maxlength="1000"></textarea>
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <!-- Campo trampa anti-spam: los humanos no lo ven -->
+          <input type="text" name="_gotcha" class="oculto" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit" class="btn btn--primario">Enviar mensaje</button>
+          <p class="form__estado" id="form-estado" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="footer">
+    <div class="contenedor footer__grid">
+      <p>&copy; <span id="anio"></span> Doroteo Hernández. Todos los derechos reservados.</p>
+      <ul class="redes">
+        <li><a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="subir" id="btn-subir" aria-label="Volver arriba">&uarr;</button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
